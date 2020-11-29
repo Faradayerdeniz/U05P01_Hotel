@@ -8,15 +8,28 @@
     <script src="https://kit.fontawesome.com/33bddc9694.js" crossorigin="anonymous"></script>
     <title>Formulario web</title>
 </head>
-
 <body>
     <header>
         <h1>Reserva Hotelera</h1>
     </header>
     <main>
         <form>
-            <input type="text" id="marica">
-            <input type="text" name="maricon" id="kevin">
+            <fieldset>
+                <label for="Hotel">Hotel o Destino</label>
+                <input type="text" size="15" id="hotel" name="Hotel" placeholder="Hotel o Destino">
+            </fieldset>
+            <fieldset>
+                <label for="FechaEntrada">Fecha de entrada</label>
+                <input type="date" size="25" id="fecha" name="FechaEntrada">
+            </fieldset>
+            <fieldset>
+                <label for="noches">Número de noches</label>
+                <input type="text" size="25" id="nochesNum" name="noches" placeholder="0 noches">
+            </fieldset>
+            <fieldset>
+                <label for="room">Habitaciones</label>
+                <input type="text" size="25" id="habitaciones" name="room" placeholder="0 habitaciones y 0 huéspedes">
+            </fieldset>
         </form>
     </main>
 
