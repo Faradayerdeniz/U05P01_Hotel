@@ -4,10 +4,10 @@ header{
     background-color: darkblue;
     padding:1%;
 }
-form{
+
+ul{
+    list-style: none;
     display: flex;
-    margin:1%;
-    flex-direction: row;
-    justify-content: center;
-    width: auto;
+    flex-wrap: wrap;
+    flex-direction:row;
 }
