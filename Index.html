@@ -21,11 +21,31 @@
             </li>
             <li>
                 <label for="FechaEntrada">Fecha de entrada</label>
-                <input type="date" size="25" id="fecha" name="FechaEntrada">
+                <input type="date" size="25" id="dateFecha" name="FechaEntrada">
             </li>
             <li>
-                <label for="noches">Número de noches</label>
-                <input type="text" size="25" id="nochesNum" name="noches" placeholder="0 noches">
+                <label for ="noches">Número de noches</label>
+                <select>
+                    <optgroup label="COMUNES">
+                        <option value="0" hidden>0 noches</option>
+                        <option value="4">4 noches</option>
+                        <option value="7">7 noches </option>
+                        <option value="10">10 noches</option>
+                        <option value="14">14 noches</option>
+                    </optgroup>
+                    <optgroup label="DIARIAS">
+                        <option value="1">1 noches</option>
+                        <option value="2">2 noches</option>
+                        <option value="3">3 noches</option>
+                        <option value="4">4 noches</option>
+                        <option value="5">5 noches</option>
+                        <option value="6">6 noches</option>
+                        <option value="7">7 noches</option>
+                        <option value="8">8 noches</option>
+                        <option value="9">9 noches</option>
+                    </optgroup>
+                </select>
+                
             </li>
             <li>
                 <label for="room">Habitaciones</label>
