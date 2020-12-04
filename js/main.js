@@ -19,7 +19,37 @@ fechaActual();
 
 //función para ir recogiendo los datos introducidos cuando el cliente
 //pulse la tecla "done o submit"
+let botonDone = document.getElementById("botonDone");
+botonDone.addEventListener("click",getConsola);
+
 function getConsola() {
     let hotel = document.getElementById("hotel").value;
+    let fechaEntrada = document.getElementById("dateFecha").value;
+    let numNoches = document.getElementById("numNoches").value; 
+    
+    console.log(`RESERVA HOTELERA: 
+    Destino: ${hotel}
+    Fecha de entrada: ${fechaEntrada}
+    Número de noches: ${numNoches}
+    Habitaciones: 
 
+    `);    
+}
+
+let botonRoom = document.getElementById("botonRoom");
+botonRoom.addEventListener("click", roomDisplay);
+
+const zonaChida = document.body.firstChild.nextElementSibling.nextSibling.nextElementSibling
+.firstElementChild.nextElementSibling.firstElementChild.nextElementSibling.nextElementSibling
+.nextElementSibling.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling
+
+function roomDisplay() {
+
+    let divHabitacion = document.createElement("div");
+    let textoDivHabitacion = document.createTextNode("Hola amigo");
+
+    divHabitacion.id = "divHabitacionPrincipal";
+    divHabitacion.append(textoDivHabitacion);
+    
+    zonaChida.appendChild(divHabitacion);
 }

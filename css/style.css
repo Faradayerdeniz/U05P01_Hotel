@@ -1,16 +1,64 @@
-header{
+header {
     text-align: center;
     color: white;
-    background-color: darkblue;
-    padding:1%;
+    background-color: rgb(33, 33, 155);
+    width: 100%;
+    height:auto;
 }
-
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+main{
+    margin-top: 5%;
+    margin-left: 5%;
+    background-color: rgb(245, 229, 1);
+    width:80%;
+    height: auto;
+}
+body {
+    background-image: url("/img/background.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h5{
+    background-color: rgb(245, 229, 1);
+    width: 100px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
 ul{
     list-style: none;
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction:row;
+    font-weight: 600;
+    color: darkblue;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-li{
-    margin:1%;
+input,select{
+    border: 0;
 }
+button{
+    padding: none;
+    border: none;
+    background: none;
+}
+li {
+    background-color: white;
+    padding:10px;
+    padding-right: 45px !important;
+    margin: 2%;
+}
+#botonDone{
+    background-color: orange;
+    padding:20px;
+    margin-left:-20px;
+}
+#diferente{
+    background:none;
+}
+
+
